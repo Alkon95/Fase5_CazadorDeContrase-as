@@ -1,15 +1,15 @@
 class JuegoException(Exception):
-    """Excepción base para el proyecto de software."""
+    """Clase base para las excepciones del juego Cazador de Contraseñas."""
     pass
 
 class LongitudInvalidaError(JuegoException):
-    """Se lanza cuando la longitud es menor a 8."""
+    """Excepción lanzada cuando la longitud de la contraseña es menor a 8."""
     pass
 
 class TipoDatoInvalidoError(JuegoException):
-    """Se lanza cuando se ingresan letras en lugar de números."""
+    """Excepción lanzada cuando el usuario ingresa un dato que no es un número."""
     pass
 
 class ContrasenaInvalidaError(JuegoException):
-    """Se lanza ante fallos internos de generación."""
+    """Excepción lanzada cuando el generador no logra crear una contraseña válida."""
     pass

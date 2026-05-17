@@ -1,30 +1,7 @@
 import json
 import os
 import random
-
-# ==================================================
-# EXCEPCIONES DEL JUEGO (Definidas de forma local)
-# ==================================================
-class JuegoException(Exception):
-    """Excepción base para el proyecto de software."""
-    pass
-
-class LongitudInvalidaError(JuegoException):
-    """Se lanza cuando la longitud es menor a 8."""
-    pass
-
-class TipoDatoInvalidoError(JuegoException):
-    """Se lanza cuando se ingresan letras en lugar de números."""
-    pass
-
-class ContrasenaInvalidaError(JuegoException):
-    """Se lanza ante fallos internos de generación."""
-    pass
-
-
-# ==================================================
-# CONTROLADOR PRINCIPAL DEL JUEGO
-# ==================================================
+from src.exceptions import TipoDatoInvalidoError, LongitudInvalidaError, ContrasenaInvalidaError
 from src.password import Contrasena
 from src.chests import CofreComun, CofreRaro, CofreLegendario, CofreMaldito
 
